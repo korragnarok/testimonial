@@ -1,0 +1,159 @@
+:root {
+
+    --violet: hsl(263, 55%, 52%);
+    --dark-gray: hsl(217, 19%, 35%);
+    --dark-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+    ---light-gray: hsl(0, 0%, 81%);
+    --light-blue: hsl(210, 46%, 95%);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+p, 
+header,
+div {
+    margin: 0;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    background: var(--light-blue);
+}
+
+h4 {
+    font-size: 14px;
+    padding-top: .2rem;
+}
+
+h5 {
+    letter-spacing: .1rem;
+}
+
+h3 {
+
+    font-size: 18px;
+    font-weight: 500;
+    padding: 1rem 1rem 1rem 0;
+}
+
+span {
+    font-weight: 100;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: .5em;
+    margin: 1.5rem;
+    
+}
+
+.heading {
+    display: flex;
+
+}
+
+.picture {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border:solid hsl(0, 0%, 81%) 1px;
+    margin-top: .5rem;
+}
+
+.daniel-card {
+    background:hsl(263, 55%, 52%);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 75% 0%;
+    color:hsl(0, 0%, 100%);
+}
+
+h4 {
+    margin-left: 1em;
+}
+
+.daniel-name {
+    margin-left: 1em;
+    font-size: 14px;
+}
+
+.daniel-verified {
+    font-weight: 100;
+    letter-spacing: .1em;
+    
+}
+
+.daniel-paragraph {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 1rem 1rem 1rem 0;
+    
+}
+
+.jonathan-card {
+    background: hsl(217, 19%, 35%);
+    color:hsl(0, 0%, 100%);
+    
+}
+
+.jeanette-card {
+    background:hsl(0, 0%, 100%);
+}
+
+.patrick-card {
+    background:hsl(219, 29%, 14%);
+    color: white;
+    
+}
+
+.kira-card {
+    background:hsl(0, 0%, 100%)
+}
+
+
+
+.attribution {
+    margin: 5rem;
+    text-align: center;
+}
+
+@media (min-width:800px) {
+
+
+        .grid-col-span-2 {
+            grid-column: span 2;
+        }
+
+        .kira-card {
+            background:hsl(0, 0%, 100%);
+            grid-column-start: 4; 
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(4, 2fr);
+            
+        }
+
+        .card {
+            margin: 0;
+        }
+
+    }
+
+    
